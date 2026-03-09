@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Liberclé | Simplificando ITSM</title>
+
+    <meta name="description"
+        content="Consultoría especializada en ITSM. Implementación, optimización y gestión de servicios IT con GLPI." />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css" />
+
+    <!-- Google Fonts (recomendado para look profesional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- =========================
+        NAV
+    ========================== -->
+    <header class="site-header">
+        <div class="container header__inner">
+            <a href="#" class="brand">
+                <img src="img/logo.png" alt="Liberclé" class="brand__logo">
+            </a>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li><a href="#servicios" class="main-nav__link">Servicios</a></li>
+                    <li><a href="#enfoque" class="main-nav__link">Enfoque</a></li>
+                    <li><a href="#nosotros" class="main-nav__link">Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section id="hero" class="hero">
+        <div class="container hero__container">
+            <div class="hero__content reveal">
+                <h1 class="hero__title">
+                    Ordená y<br>
+                    profesionalizá el<br>
+                    soporte IT de tu empresa
+                </h1>
+
+                <p class="hero__text">
+                    Ordenamos y optimizamos la operación de soporte técnico mediante
+                    prácticas ITSM, automatización y plataformas modernas de gestión.
+                </p>
+
+                <div class="hero__actions">
+                    <a href="#cta" class="btn btn-primary">Solicitar asesoramiento</a>
+                    <a href="#servicios" class="btn btn-outline">Ver servicios</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         PROBLEMA 
+    ========================== -->
+    <section id="problemas" class="problemas">
+        <div class="container">
+
+            <h2 class="problemas__title">
+                Tu soporte IT funciona así?
+            </h2>
+
+            <p class="problemas__intro">
+                En muchas organizaciones, el soporte técnico crece de forma desordenada.
+                Las solicitudes llegan por distintos canales, los procesos no están claros
+                y es difícil tener visibilidad real de la operación.
+            </p>
+
+            <div class="problemas__grid">
+
+                <!-- CARD 1 -->
+                <div class="problema-card reveal reveal-delay-1">
+                    <div class="problema-icon">
+                        <!-- EMAIL -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                        </svg>
+                    </div>
+                    <h3>Tickets por email</h3>
+                    <p>
+                        Las solicitudes de soporte llegan por múltiples canales
+                        y se pierden o quedan sin seguimiento.
+                    </p>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="problema-card reveal reveal-delay-2">
+                    <div class="problema-icon">
+                        <!-- WHATSAPP -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg>
+                    </div>
+                    <h3>Problemas por WhatsApp</h3>
+                    <p>
+                        Los incidentes se reportan de forma informal
+                        y no queda registro ni trazabilidad.
+                    </p>
+                </div>
+
+
+                <!-- CARD 3 -->
+                <div class="problema-card reveal reveal-delay-3">
+                    <div class="problema-icon">
+                        <!-- INVENTARIO -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <path
+                                d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5zM3 12v-2h2v2zm0 1h2v2H4a1 1 0 0 1-1-1zm3 2v-2h3v2zm4 0v-2h3v1a1 1 0 0 1-1 1zm3-3h-3v-2h3zm-7 0v-2h3v2z" />
+                        </svg>
+
+                    </div>
+                    <h3>Inventario en plantillas</h3>
+                    <p>
+                        Equipos y activos tecnológicos registrados
+                        en archivos dispersos o desactualizados.
+                    </p>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="problema-card reveal reveal-delay-4">
+                    <div class="problema-icon">
+                        <!-- MÉTRICAS -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <path
+                                d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1zm1 12h2V2h-2zm-3 0V7H7v7zm-5 0v-3H2v3z" />
+                        </svg>
+                    </div>
+                    <h3>Falta de métricas</h3>
+                    <p>
+                        No hay visibilidad clara sobre tiempos de respuesta,
+                        carga de trabajo o calidad del servicio.
+                    </p>
+                </div>
+            </div>
+
+            <p class="problemas__conclusion">
+                Esto genera desorden operativo, retrabajo y dificultad para mejorar el servicio.
+            </p>
+
+
+
+            <!--PLATAFORMA-->
+            <div class="plataforma-intro">
+                <div class="plataforma-intro__top">
+                    <h2 class="plataforma-intro__title">
+                        Una plataforma profesional para gestionar el soporte y los activos IT
+                    </h2>
+                    <p class="plataforma-intro__text">
+                        Centralizá la gestión de incidentes, requerimientos y activos tecnológicos en una plataforma
+                        ITSM
+                        moderna que transforma el soporte técnico en una operación organizada, medible y escalable.
+                        Implementación inicial en pocos días, sin proyectos largos ni complejidad innecesaria.
+                    </p>
+                </div>
+
+                <div class="plataforma-intro__top">
+                    <h3 class="plataforma-intro__subtitle">
+                        ITSM adaptado a PyMEs
+                    </h3>
+                    <p class="plataforma-intro__text">
+                        Soluciones de gestión de servicios de TI pensadas para organizaciones que necesitan ordenar su
+                        soporte sin la complejidad de las grandes plataformas.
+                    </p>
+                </div>
+
+                <div class="plataforma-features">
+                    <div class="plataforma-feature">
+                        <div class="plataforma-feature__icon">
+                            <!-- tickets -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-ticket-perforated" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 4.85v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9z" />
+                                <path
+                                    d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3zM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9z" />
+                            </svg>
+                        </div>
+                        <div class="plataforma-feature__content">
+                            <h4>Gestión de tickets</h4>
+                            <p>Registro, seguimiento y resolución de incidentes en un único sistema.</p>
+                        </div>
+                    </div>
+
+                    <div class="plataforma-feature">
+                        <div class="plataforma-feature__icon">
+                            <!-- inventario -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 16 16" aria-hidden="true">
+                                <path
+                                    d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z" />
+                            </svg>
+                        </div>
+                        <div class="plataforma-feature__content">
+                            <h4>Inventario IT</h4>
+                            <p>Control centralizado de equipos, software y activos tecnológicos.</p>
+                        </div>
+                    </div>
+
+                    <div class="plataforma-feature">
+                        <div class="plataforma-feature__icon">
+                            <!-- automatización -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-gear" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
+                                <path
+                                    d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" />
+                            </svg>
+                        </div>
+                        <div class="plataforma-feature__content">
+                            <h4>Automatización</h4>
+                            <p>Flujos de trabajo que reducen tareas manuales y aceleran la atención.</p>
+                        </div>
+                    </div>
+
+                    <div class="plataforma-feature">
+                        <div class="plataforma-feature__icon">
+                            <!-- métricas -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 16 16" aria-hidden="true">
+                                <path
+                                    d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1zm1 12h2V2h-2zm-3 0V7H7v7zm-5 0v-3H2v3z" />
+                            </svg>
+                        </div>
+                        <div class="plataforma-feature__content">
+                            <h4>Métricas y reportes</h4>
+                            <p>KPIs y tableros para entender y mejorar la operación.</p>
+                        </div>
+                    </div>
+
+                    <div class="plataforma-feature">
+                        <div class="plataforma-feature__icon">
+                            <!-- base de conocimiento -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-book" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                            </svg>
+                        </div>
+                        <div class="plataforma-feature__content">
+                            <h4>Base de conocimiento</h4>
+                            <p>Documentación interna para resolver problemas más rápido.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         SERVICIOS
+    ========================== -->
+    <section id="servicios" class="servicios">
+        <div class="container">
+            <h2 class="servicios__title">
+                Servicios para profesionalizar la gestión de IT
+            </h2>
+
+            <div class="servicios__grid">
+                <!--Implementación ITSM -->
+                <article class="servicio-card reveal reveal-delay-1">
+                    <div class="servicio-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-gear" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
+                            <path
+                                d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" />
+                        </svg>
+                    </div>
+                    <h3 class="servicio-card__title">Implementación ITSM</h3>
+                    <p class="servicio-card__text">
+                        Diseño e implementación de procesos de gestión de servicios alineados a buenas prácticas y
+                        adaptados a la realidad de tu organización.
+                    </p>
+                </article>
+                <!--Optimización de Service Desk-->
+                <article class="servicio-card reveal reveal-delay-2">
+                    <div class="servicio-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-bullseye" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10m0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12" />
+                            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8" />
+                            <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                        </svg>
+                    </div>
+                    <h3 class="servicio-card__title">Optimización de Service Desk</h3>
+                    <p class="servicio-card__text">
+                        Mejoras en flujos de atención, categorización de tickets, SLAs, base de conocimiento y
+                        experiencia del usuario.
+                    </p>
+                </article>
+                <!--Herramientas ITSM-->
+                <article class="servicio-card reveal reveal-delay-3">
+                    <div class="servicio-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-tools" viewBox="0 0 16 16">
+                            <path
+                                d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z" />
+                        </svg>
+                    </div>
+                    <h3 class="servicio-card__title">Herramientas ITSM</h3>
+                    <p class="servicio-card__text">
+                        Configuración y mejora de plataformas de gestión de servicios, integraciones con sistemas
+                        existentes y automatización de procesos.
+                    </p>
+                </article>
+                <!--Gobernanza y métricas-->
+                <article class="servicio-card reveal reveal-delay-4">
+                    <div class="servicio-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <path
+                                d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1zm1 12h2V2h-2zm-3 0V7H7v7zm-5 0v-3H2v3z" />
+                        </svg>
+                    </div>
+                    <h3 class="servicio-card__title">Gobernanza y métricas</h3>
+                    <p class="servicio-card__text">
+                        Definición de KPIs, tableros de control y reporting ejecutivo para mejorar la visibilidad y la
+                        toma de decisiones.
+                    </p>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         ENFOQUE
+    ========================== -->
+    <section id="enfoque" class="enfoque">
+        <div class="container">
+            <h2 class="enfoque__title">Nuestro enfoque</h2>
+            <div class="enfoque__badges reveal">
+                <div class="enfoque-badge">
+                    <span class="enfoque-badge__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="12" fill="#f89c45"></circle>
+                            <path d="M7 12.5 10.2 15.7 17 8.9" stroke="#ffffff" stroke-width="2.6"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="enfoque-badge__text">Simple</span>
+                </div>
+
+                <div class="enfoque-badge">
+                    <span class="enfoque-badge__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="12" fill="#f89c45"></circle>
+                            <path d="M7 12.5 10.2 15.7 17 8.9" stroke="#ffffff" stroke-width="2.6"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="enfoque-badge__text">Pragmático</span>
+                </div>
+
+                <div class="enfoque-badge">
+                    <span class="enfoque-badge__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="12" fill="#f89c45"></circle>
+                            <path d="M7 12.5 10.2 15.7 17 8.9" stroke="#ffffff" stroke-width="2.6"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                    <span class="enfoque-badge__text">Orientado a resultados</span>
+                </div>
+            </div>
+
+            <p class="enfoque__text reveal">
+                Trabajamos con un enfoque práctico que combina procesos claros, herramientas adecuadas y métricas que
+                permiten mejorar de forma continua la operación de soporte.
+            </p>
+
+            <!--IMPLEMENTACION-->
+            <div class="implementacion-clara">
+                <h3 class="implementacion-clara__title">Implementación clara</h3>
+                <p class="implementacion-clara__subtitle">
+                    Un proceso estructurado para garantizar el éxito de tu plataforma IT
+                </p>
+
+                <div class="implementacion-steps">
+                    <!-- Diagnóstico -->
+                    <article class="implementacion-step reveal reveal-delay-1">
+                        <div class="implementacion-step__icon-wrap">
+                            <div class="implementacion-step__circle">
+                                <div class="implementacion-step__circle-inner">
+                                    <div class="implementacion-step__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="implementacion-step__number">1</span>
+                        </div>
+                        <h4 class="implementacion-step__title">Diagnóstico</h4>
+                        <p class="implementacion-step__text">
+                            Analizamos el estado actual del soporte, procesos y herramientas para identificar
+                            oportunidades de mejora.
+                        </p>
+                    </article>
+                    <!-- Implementación -->
+                    <article class="implementacion-step reveal reveal-delay-2">
+                        <div class="implementacion-step__icon-wrap">
+                            <div class="implementacion-step__circle">
+                                <div class="implementacion-step__circle-inner">
+                                    <div class="implementacion-step__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
+                                            <path
+                                                d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="implementacion-step__number">2</span>
+                        </div>
+                        <h4 class="implementacion-step__title">Implementación</h4>
+                        <p class="implementacion-step__text">
+                            Configuramos la plataforma ITSM y dejamos operativos los procesos principales.
+                        </p>
+                    </article>
+                    <!-- Personalización -->
+                    <article class="implementacion-step reveal reveal-delay-3">
+                        <div class="implementacion-step__icon-wrap">
+                            <div class="implementacion-step__circle">
+                                <div class="implementacion-step__circle-inner">
+                                    <div class="implementacion-step__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-sliders2-vertical" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M0 10.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1H3V1.5a.5.5 0 0 0-1 0V10H.5a.5.5 0 0 0-.5.5M2.5 12a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5m3-6.5A.5.5 0 0 0 6 6h1.5v8.5a.5.5 0 0 0 1 0V6H10a.5.5 0 0 0 0-1H6a.5.5 0 0 0-.5.5M8 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2A.5.5 0 0 0 8 1m3 9.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1H14V1.5a.5.5 0 0 0-1 0V10h-1.5a.5.5 0 0 0-.5.5m2.5 1.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="implementacion-step__number">3</span>
+                        </div>
+                        <h4 class="implementacion-step__title">Personalización</h4>
+                        <p class="implementacion-step__text">
+                            Adaptamos categorías, flujos de trabajo, reglas y automatizaciones a la realidad de tu
+                            organización.
+                        </p>
+                    </article>
+                    <!-- Puesta en marcha -->
+                    <article class="implementacion-step reveal reveal-delay-4 ">
+                        <div class="implementacion-step__icon-wrap">
+                            <div class="implementacion-step__circle">
+                                <div class="implementacion-step__circle-inner">
+                                    <div class="implementacion-step__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-rocket-takeoff" viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532" />
+                                            <path
+                                                d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z" />
+                                            <path
+                                                d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="implementacion-step__number">4</span>
+                        </div>
+
+                        <h4 class="implementacion-step__title">Puesta en marcha</h4>
+                        <p class="implementacion-step__text">
+                            Capacitamos al equipo y acompañamos la adopción para asegurar resultados desde el
+                            inicio.
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+            <!--ONBOARDING-->
+            <div class="onboarding">
+                <div class="onboarding__grid">
+                    <!-- COLUMNA IZQUIERDA -->
+                    <div class="onboarding__col reveal">
+                        <h3 class="onboarding__title">
+                            Onboarding express
+                        </h3>
+                        <p class="onboarding__intro">
+                            Implementamos tu plataforma ITSM en pocos días para que puedas comenzar a trabajar
+                            rápidamente,
+                            sin proyectos largos ni complejidad innecesaria.
+                        </p>
+                        <ul class="onboarding__list">
+                            <li>
+                                <span class="check-icon check-icon--green">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M7 12.5L10.2 15.5L17 8.8" stroke="currentColor" stroke-width="2.4"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                Configuración inicial de la plataforma
+                            </li>
+                            <li>
+                                <span class="check-icon check-icon--green">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M7 12.5L10.2 15.5L17 8.8" stroke="currentColor" stroke-width="2.4"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                Aplicación de buenas prácticas ITSM
+                            </li>
+                            <li>
+                                <span class="check-icon check-icon--green">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M7 12.5L10.2 15.5L17 8.8" stroke="currentColor" stroke-width="2.4"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                Capacitación del equipo
+                            </li>
+                            <li>
+                                <span class="check-icon check-icon--green">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M7 12.5L10.2 15.5L17 8.8" stroke="currentColor" stroke-width="2.4"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                Acompañamiento en la puesta en marcha
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- COLUMNA DERECHA -->
+                    <div class="onboarding__col reveal">
+                        <h3 class="onboarding__benefits-title">
+                            Beneficios del enfoque
+                        </h3>
+                        <ul class="onboarding__benefits">
+                            <li>
+                                <span class="check-icon check-icon--orange">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M7 12.5L10.2 15.5L17 8.8" stroke="currentColor" stroke-width="2.4"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                Diagnóstico rápido y accionable
+                            </li>
+                            <li>
+                                <span class="check-icon check-icon--orange">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M7 12.5L10.2 15.5L17 8.8" stroke="currentColor" stroke-width="2.4"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                Procesos simples, sin burocracia innecesaria
+                            </li>
+                            <li>
+                                <span class="check-icon check-icon--orange">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M7 12.5L10.2 15.5L17 8.8" stroke="currentColor" stroke-width="2.4"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                Implementación en pocos días
+                            </li>
+                            <li>
+                                <span class="check-icon check-icon--orange">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                        <path d="M7 12.5L10.2 15.5L17 8.8" stroke="currentColor" stroke-width="2.4"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                Documentación y capacitación
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SOBRE NOSOTROS
+    ========================== -->
+    <section id="nosotros" class="nosotros">
+        <div class="container">
+            <div class="nosotros__grid">
+                <div class="nosotros__left reveal">
+                    <h2 class="nosotros__title">Sobre nosotros</h2>
+
+                    <p class="nosotros__text">
+                        Somos un equipo de profesionales con más de 20 años de experiencia en el mercado,
+                        especializados en gestión de servicios de TI, automatización de procesos y plataformas ITSM.
+                    </p>
+
+                    <p class="nosotros__text">
+                        Acompañamos a organizaciones en la implementación y optimización de sus operaciones de soporte,
+                        aplicando buenas prácticas adaptadas al tamaño y madurez de cada empresa.
+                    </p>
+
+                    <p class="nosotros__text nosotros__text--last">
+                        Nuestro enfoque es práctico y orientado a resultados: procesos claros, herramientas adecuadas
+                        y mejoras medibles en la operación.
+                    </p>
+                </div>
+
+                <div class="nosotros__right reveal">
+                    <article class="nosotros-metric">
+                        <span class="nosotros-metric__number">20+</span>
+                        <p class="nosotros-metric__label">Años de experiencia en el mercado</p>
+                    </article>
+
+                    <article class="nosotros-metric">
+                        <span class="nosotros-metric__number">ITSM</span>
+                        <p class="nosotros-metric__label">Especialización en soporte, procesos y plataformas</p>
+                    </article>
+
+                    <article class="nosotros-metric">
+                        <span class="nosotros-metric__number">100%</span>
+                        <p class="nosotros-metric__label">Enfoque práctico y orientado a resultados</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         CTA FINAL
+    ========================== -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <div class="cta-final__header reveal">
+                <h2 class="cta-final__title">
+                    Llevá la gestión IT de tu empresa a un nivel profesional
+                </h2>
+
+                <p class="cta-final__subtitle">
+                    Solicitá una reunión y evaluamos tu caso.
+                </p>
+            </div>
+
+            <!-- FORMULARIO -->
+            <div class="cta-final__box reveal">
+                <form class="cta-form" id="contactForm" action="/send.php" method="POST" novalidate>
+                    <!-- honeypot anti spam -->
+                    <input type="text" name="website" autocomplete="off" tabindex="-1"
+                        style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
+
+                    <div class="cta-form__grid">
+                        <div class="cta-form__group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                            <small class="cta-form__error"></small>
+                        </div>
+
+                        <div class="cta-form__group">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" name="empresa" required>
+                            <small class="cta-form__error"></small>
+                        </div>
+
+                        <div class="cta-form__group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <small class="cta-form__error"></small>
+                        </div>
+
+                        <div class="cta-form__group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="text" id="telefono" name="telefono" required>
+                            <small class="cta-form__error"></small>
+                        </div>
+                    </div>
+
+                    <div class="cta-form__group">
+                        <label for="mensaje">Contanos más sobre tu proyecto</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" required
+                            placeholder="Describí brevemente qué necesitás y cuáles son tus objetivos..."></textarea>
+                        <small class="cta-form__error"></small>
+                    </div>
+
+                    <div class="cta-form__footer">
+                        <button type="submit" class="cta-form__button" id="contactSubmit">
+                            <span class="cta-form__button-text">Enviar</span>
+                            <span class="cta-form__button-spinner" aria-hidden="true"></span>
+                        </button>
+
+                        <p class="cta-form__status" id="contactStatus" aria-live="polite"></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- TOAST ÉXITO -->
+            <div class="form-toast" id="formToast">
+                <span class="form-toast__icon">✓</span>
+                <span class="form-toast__text">Mensaje enviado correctamente.</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+        <div class="container footer__container">
+
+            <!-- LOGO -->
+            <div class="footer__brand">
+                <a href="#" class="brand">
+                    <img src="img/logo.png" alt="Liberclé" class="brand__logo">
+                </a>
+            </div>
+
+            <!-- REDES -->
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/company/libercl%C3%A9/" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg>
+                </a>
+
+                <!--info@libercle.com-->
+                <a href="mailto:info@libercle.com?subject=Consulta%20Web" aria-label="Email" class="js-email-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-envelope-at" viewBox="0 0 16 16">
+                        <path
+                            d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z" />
+                        <path
+                            d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                    </svg>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- BOTTOM -->
+        <div class="footer__bottom">
+            © 2026 LiberClé — Diseñado y desarrollado por
+            <a href="https://estudiohs.com.ar" target="_blank" class="footer__credit">
+                HEMISFERIO SUR
+            </a>
+        </div>
+
+    </footer>
+
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+    <!-- SCROLL SOLO MOBILE-->
+    <button class="scroll-top" aria-label="Volver arriba">
+        <svg class="scroll-top__icon" viewBox="0 0 24 24" fill="none">
+            <path d="M6 14L12 8L18 14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>
+</body>
+
+</html>
