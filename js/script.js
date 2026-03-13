@@ -246,3 +246,35 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 })();
+
+
+/*para parallax*/
+
+  (function () {
+    const visual = document.getElementById('heroParallax');
+    if (!visual || window.matchMedia('(max-width: 768px)').matches) return;
+
+    const layers = visual.querySelectorAll('[data-depth]');
+
+    visual.addEventListener('mousemove', (e) => {
+      const rect = visual.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+      layers.forEach(layer => {
+        const depth = parseFloat(layer.dataset.depth || 0.08);
+        const moveX = x * depth * 42;
+        const moveY = y * depth * 42;
+        layer.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
+      });
+    });
+
+    visual.addEventListener('mouseleave', () => {
+      layers.forEach(layer => {
+        layer.style.transform = 'translate3d(0,0,0)';
+      });
+    });
+  })();
+
+
+  
