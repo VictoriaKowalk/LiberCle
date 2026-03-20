@@ -845,11 +845,11 @@ PROBLEMA
 }
 
 /* =========================
-                                                                  SECCION PROPUESTA
+SECCION PROPUESTA
 ========================= */
 .propuesta {
   padding: 50px 0 40px;
-  background: #f4f6f6;
+  background: #2f7f82;
 }
 
 .plataforma-intro {
@@ -868,7 +868,7 @@ PROBLEMA
   line-height: 1.08;
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: #111111;
+  color: #ffffff;
   margin: 0 0 18px;
 }
 
@@ -876,7 +876,7 @@ PROBLEMA
   max-width: 760px;
   font-size: 1.05rem;
   line-height: 1.7;
-  color: #4c5458;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -1186,68 +1186,6 @@ PROBLEMA
 
 
 
-/* =========================
-   ENFOQUE
-========================= */
-
-.enfoque {
-  background: #f4f6f6;
-  padding: 72px 0 96px;
-  /* MOD*/
-}
-
-.enfoque__title {
-  font-size: 44px;
-  /* MOD*/
-  line-height: 1.15;
-  font-weight: 700;
-  /* MOD*/
-  color: #111111;
-  margin: 0 0 20px;
-  /* MOD */
-}
-
-.enfoque__badges {
-  display: flex;
-  align-items: center;
-  gap: 44px;
-  flex-wrap: wrap;
-  margin-bottom: 36px;
-}
-
-.enfoque-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.enfoque-badge__icon {
-  width: 32px;
-  height: 32px;
-  display: inline-flex;
-  flex-shrink: 0;
-}
-
-.enfoque-badge__icon svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.enfoque-badge__text {
-  font-size: 1.15rem;
-  line-height: 1.2;
-  font-weight: 700;
-  color: #111111;
-}
-
-.enfoque__text {
-  max-width: 920px;
-  font-size: 16px;
-  line-height: 1.65;
-  color: #1f1f1f;
-  margin: 0;
-}
 
 
 
@@ -1256,8 +1194,8 @@ PROBLEMA
 ========================= */
 
 .implementacion-clara {
-  margin-top: 72px;
-  /* MOD*/
+  padding: 50px 0 40px;
+    margin-top: 0;
 }
 
 
@@ -1265,37 +1203,30 @@ PROBLEMA
 .onboarding__title,
 .onboarding__benefits-title {
   font-size: 44px;
-  /* MOD */
   line-height: 1.15;
   font-weight: 700;
-  /* MOD */
 }
 
 .implementacion-clara__title {
-  color: #6b6f72;
+  color: #2f7f82;
   margin: 0 0 20px;
-  /* MOD*/
+
 }
 
 .onboarding__title {
-  color: #6b6f72;
+  color: #2f7f82;
   margin: 0 0 20px;
-  /* MOD */
 }
 
 .onboarding__benefits-title {
-  color: #6b6f72;
+  color: #2f7f82;
   margin: 0 0 20px;
-  /* MOD*/
 }
 
 .implementacion-clara__subtitle {
   max-width: 920px;
-  /* MOD */
   font-size: 16px;
-  /* MOD */
   line-height: 1.65;
-  /* MOD */
   color: #1f1f1f;
   margin: 0 0 40px;
 }
@@ -1401,7 +1332,7 @@ PROBLEMA
 
 @media (max-width: 640px) {
   .implementacion-clara {
-    margin-top: 60px;
+  padding: 84px 0 20px;
   }
 
   .implementacion-clara__subtitle {
@@ -1550,9 +1481,8 @@ PROBLEMA
 ========================= */
 
 .nosotros {
-  background: #2f7f82;
+  background: #f4f6f6;
   padding: 72px 0 96px;
-  /* MOD*/
 }
 
 
@@ -1568,23 +1498,17 @@ PROBLEMA
 }
 
 .nosotros__title {
-  color: #ffffff;
+  color: #2f7f82;
   font-size: 44px;
-  /* MOD */
   line-height: 1.15;
-  /* MOD */
   font-weight: 700;
-  /* MOD */
   margin: 0 0 20px;
-  /* MOD */
 }
 
 .nosotros__text {
-  color: rgba(255, 255, 255, 0.92);
+  color: #000000;
   font-size: 16px;
-  /* MOD */
   line-height: 1.65;
-  /* MOD */
   margin: 0 0 14px;
 }
 
@@ -1599,8 +1523,9 @@ PROBLEMA
 }
 
 .nosotros-metric {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(47, 127, 130, 0.68);
+    ;
+    border: 1px solid rgba(47, 127, 130, 0.22);
   border-radius: 18px;
   padding: 24px 22px;
   backdrop-filter: blur(4px);
@@ -1640,43 +1565,37 @@ PROBLEMA
    CTA FINAL
 ========================= */
 
-.cta-final {
-  background: #f4f6f6;
+.cta {
+  background: #2f7f82;
   padding: 72px 0 96px;
-  /* MOD*/
 }
 
-
+.cta-final {
+  background: #2f7f82;
+  padding: 0px 0 0px;
+}
 .cta-final__header {
   text-align: center;
   max-width: 920px;
-  /* MOD */
   margin: 0 auto 42px;
-  /* MOD */
 }
 
 .cta-final__title {
   font-size: 44px;
-  /* MOD*/
   line-height: 1.15;
-  /* MOD */
   font-weight: 700;
-  /* MOD */
-  color: #2f7f82;
+  color: #ffffff;
   max-width: 920px;
-  /* MOD */
   margin: 0 auto 18px;
   text-wrap: balance;
 }
 
 .cta-final__subtitle {
   font-size: 16px;
-  /* MOD */
   line-height: 1.65;
-  /* MOD */
   font-weight: 600;
-  color: #2f7f82;
-  margin: 0;
+  color: #ffffff;
+    margin: 8px 0 0;
 }
 
 /* =========================
@@ -1686,8 +1605,8 @@ PROBLEMA
 .cta-final__box {
   max-width: 1180px;
   margin: 0 auto;
-  background: rgba(47, 127, 130, 0.68);
-  border: 1px solid rgba(47, 127, 130, 0.22);
+  background: rgba(99, 153, 155, 0.68);
+    border: 1px solid rgba(115, 135, 136, 0.22);
   border-radius: 40px;
   padding: 40px 42px 34px;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
@@ -2029,8 +1948,8 @@ PROBLEMA
 .footer {
   background: #f4f6f6;
   padding: 36px 0 18px;
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
-  margin-top: 80px;
+  border-top: none;
+    margin-top: 0;
 }
 
 .footer__container {
