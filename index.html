@@ -2,21 +2,71 @@
 <html lang="es">
 
 <head>
+    <!-- =========================
+                                    META 
+                                ========================== -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Liberclé | Simplificando ITSM</title>
-
+    <title>Liberclé | Consultoría ITSM y GLPI</title>
     <meta name="description"
-        content="Consultoría especializada en ITSM. Implementación, optimización y gestión de servicios IT con GLPI." />
+        content="Implementamos, optimizamos y gestionamos servicios IT con enfoque ITSM. Especialistas en GLPI para empresas que buscan eficiencia y control." />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Liberclé" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://libercle.com/">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/estilos.css" />
+    <!-- =========================
+                                    OPEN GRAPH (Facebook / LinkedIn)
+                                ========================== -->
+    <meta property="og:title" content="Liberclé | Simplificando ITSM">
+    <meta property="og:description" content="Consultoría ITSM. Gestión de servicios IT para empresas.">
+    <meta property="og:image" content="https://libercle.com/img/og-image.jpg">
+    <meta property="og:url" content="https://libercle.com/">
+    <meta property="og:type" content="website">
 
-    <!-- Google Fonts (recomendado para look profesional) -->
+    <!-- =========================
+                                    TWITTER
+                                ========================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Liberclé | Simplificando ITSM">
+    <meta name="twitter:description"
+        content="Consultoría ITSM y GLPI para optimizar la operación tecnológica de tu empresa.">
+    <meta name="twitter:image" content="https://libercle.com/img/og-image.jpg">
+
+    <script type="application/ld+json">
+                                    {
+                                      "@context": "https://schema.org",
+                                      "@type": "ProfessionalService",
+                                      "name": "Liberclé",
+                                      "url": "https://libercle.com",
+                                      "logo": "https://libercle.com/img/logo.png",
+                                      "image": "https://libercle.com/img/og-image.jpg",
+                                      "description": "Consultoría especializada en ITSM. Implementación, optimización y gestión de servicios IT con GLPI.",
+                                      "brand": {
+                                        "@type": "Brand",
+                                        "name": "Liberclé"
+                                      },
+                                      "areaServed": {
+                                        "@type": "Country",
+                                        "name": "Argentina"
+                                      },
+                                      "serviceType": [
+                                        "Consultoría ITSM",
+                                        "Optimización de gestión de servicios IT",
+                                        "Gestión de servicios IT"
+                                      ],
+                                      "inLanguage": "es"
+                                    }
+                                    </script>
+
+    <!-- =========================
+                            PERFORMANCE Y FUENTES
+                        ========================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css" />
 
 </head>
 
@@ -28,7 +78,7 @@
     <header class="site-header">
         <div class="container header__inner">
             <a href="#" class="brand">
-                <img src="img/logoH.png" alt="Liberclé" class="brand__logo">
+                <img src="img/logo.png" alt="Liberclé" class="brand__logo">
             </a>
             <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
                 <span></span>
@@ -37,13 +87,10 @@
             </button>
             <nav class="main-nav">
                 <ul class="main-nav__list">
+                    <li> <a href="#propuesta" class="main-nav__link">Propuesta</a></li>
                     <li><a href="#servicios" class="main-nav__link">Servicios</a></li>
-                    <li><a href="#enfoque" class="main-nav__link">Enfoque</a></li>
                     <li><a href="#nosotros" class="main-nav__link">Nosotros</a></li>
-                    <li>
-                        <a href="mailto:info@libercle.com?subject=Consulta%20Web"
-                            class="main-nav__link js-email-link">Contacto</a>
-                    </li>
+                    <li><a href="#cta-final" class="main-nav__link ">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -82,25 +129,20 @@
         <div class="hero__bg-orb hero__bg-orb--one"></div>
         <div class="hero__bg-orb hero__bg-orb--two"></div>
         <div class="hero__bg-noise"></div>
-
         <div class="container hero__container">
             <div class="hero__content reveal">
-                <span class="hero__eyebrow">· Simplificando ITSM</span>
-
                 <h1 class="hero__title">
-                    Ordená y<br>
-                    profesionalizá el<br>
+                    Ordena y<br>
+                    profesionaliza el<br>
                     soporte IT de tu empresa
                 </h1>
-
                 <p class="hero__text">
-                    Ordenamos y optimizamos la operación de soporte técnico mediante
-                    prácticas ITSM, automatización y plataformas modernas de gestión.
+                    Optimizamos la operación de soporte técnico mediante prácticas ITSM, automatización y plataformas
+                    modernas de gestión.
                 </p>
-
                 <div class="hero__actions">
-                    <a href="#cta" class="btn btn-primary">Solicitar asesoramiento</a>
-                    <a href="#servicios" class="btn btn-outline">Ver servicios</a>
+                    <a href="mailto:info@libercle.com?subject=Consulta%20Web" class="btn btn-primary js-email-link">Solicitar
+                        asesoramiento</a>
                 </div>
             </div>
 
@@ -111,7 +153,6 @@
                 <div class="hero__card hero__card--main" data-depth="0.08">
                     <div class="hero__card-top">
                         <span class="hero__status-dot"></span>
-                        <span>Mesa de ayuda centralizada</span>
                     </div>
 
                     <div class="hero__metric">
@@ -121,7 +162,7 @@
                         </div>
                         <div>
                             <small>SLA cumplido</small>
-                            <strong>96%</strong>
+                            <strong>99%</strong>
                         </div>
                     </div>
 
@@ -143,7 +184,7 @@
                         </svg>
                     </div>
                     <div>
-                        <strong>Ticketing</strong>
+                        <strong>CMDB</strong>
                         <p>Gestión ordenada</p>
                     </div>
                 </div>
@@ -189,7 +230,7 @@
         <div class="container">
 
             <h2 class="problemas__title">
-                Tu soporte IT funciona así?
+                ¿Tu soporte IT funciona así?
             </h2>
 
             <p class="problemas__intro">
@@ -270,120 +311,117 @@
                     </p>
                 </div>
             </div>
-
-            <p class="problemas__conclusion">
-                Esto genera desorden operativo, retrabajo y dificultad para mejorar el servicio.
-            </p>
-
-
-
-            <!--PLATAFORMA-->
+    </section>
+    <!--=========================
+                        SECCION PROPUESTA
+                        ===========================-->
+    <section id="propuesta" class="propuesta">
+        <div class="container">
             <div class="plataforma-intro">
                 <div class="plataforma-intro__top">
                     <h2 class="plataforma-intro__title">
-                        Una plataforma profesional para gestionar el soporte y los activos IT
+                        Proponemos una solución profesional para gestionar tu soporte IT
                     </h2>
                     <p class="plataforma-intro__text">
-                        Centralizá la gestión de incidentes, requerimientos y activos tecnológicos en una plataforma
-                        ITSM
-                        moderna que transforma el soporte técnico en una operación organizada, medible y escalable.
-                        Implementación inicial en pocos días, sin proyectos largos ni complejidad innecesaria.
+                        Centraliza la gestión de incidentes, requerimientos, activos y CMDB en una plataforma ITSM
+                        moderna
+                        que transforme el soporte técnico en una operación organizada, medible y escalable.
                     </p>
                 </div>
+                <!-- GRID 2 COLUMNAS -->
+                <div class="plataforma-layout">
+                    <!-- IZQUIERDA -->
+                    <div class="plataforma-left">
+                        <h3 class="plataforma-left__title">
+                            Herramientas y procesos al alcance de PyMEs
+                        </h3>
+                        <p class="plataforma-left__text">
+                            Implementación inicial en pocos días,<br>
+                            sin complejidad innecesaria.
+                        </p>
+                        </div>
+                    <!-- DERECHA  -->
+                    <div class="plataforma-features">
+                        <div class="plataforma-feature">
+                            <div class="plataforma-feature__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-perforated"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 4.85v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9z" />
+                                        <path
+                                            d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3zM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9z" />
+                                    </svg>
+                                    </div>
+                                    <div class="plataforma-feature__content">
+                                        <h4>Gestión de tickets</h4>
+                                        <p>Registro, seguimiento y resolución de incidentes en un único sistema.</p>
+                                    </div>
+                                    </div>
 
-                <div class="plataforma-intro__top">
-                    <h3 class="plataforma-intro__subtitle">
-                        ITSM adaptado a PyMEs
-                    </h3>
-                    <p class="plataforma-intro__text">
-                        Soluciones de gestión de servicios de TI pensadas para organizaciones que necesitan ordenar su
-                        soporte sin la complejidad de las grandes plataformas.
-                    </p>
-                </div>
+                            <div class="plataforma-feature">
+                                <div class="plataforma-feature__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z" />
+                                    </svg>
+                                    </div>
+                                    <div class="plataforma-feature__content">
+                                        <h4>Inventario IT</h4>
+                                        <p>Control centralizado de equipos, software y activos tecnológicos.</p>
+                                    </div>
+                                    </div>
 
-                <div class="plataforma-features">
-                    <div class="plataforma-feature">
-                        <div class="plataforma-feature__icon">
-                            <!-- tickets -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-ticket-perforated" viewBox="0 0 16 16">
-                                <path
-                                    d="M4 4.85v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9zm-7 1.8v.9h1v-.9zm7 0v.9h1v-.9z" />
-                                <path
-                                    d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3zM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9z" />
-                            </svg>
-                        </div>
-                        <div class="plataforma-feature__content">
-                            <h4>Gestión de tickets</h4>
-                            <p>Registro, seguimiento y resolución de incidentes en un único sistema.</p>
-                        </div>
-                    </div>
+                            <div class="plataforma-feature">
+                                <div class="plataforma-feature__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
+                                        <path
+                                            d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" />
+                                    </svg>
+                                    </div>
+                                    <div class="plataforma-feature__content">
+                                        <h4>Automatización</h4>
+                                        <p>Flujos de trabajo que reducen tareas manuales y aceleran la atención.</p>
+                                    </div>
+                                    </div>
 
-                    <div class="plataforma-feature">
-                        <div class="plataforma-feature__icon">
-                            <!-- inventario -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                viewBox="0 0 16 16" aria-hidden="true">
-                                <path
-                                    d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z" />
-                            </svg>
-                        </div>
-                        <div class="plataforma-feature__content">
-                            <h4>Inventario IT</h4>
-                            <p>Control centralizado de equipos, software y activos tecnológicos.</p>
-                        </div>
-                    </div>
+                            <div class="plataforma-feature">
+                                <div class="plataforma-feature__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1zm1 12h2V2h-2zm-3 0V7H7v7zm-5 0v-3H2v3z" />
+                                    </svg>
+                                    </div>
+                                    <div class="plataforma-feature__content">
+                                        <h4>Métricas y reportes</h4>
+                                        <p>KPIs y tableros para entender y mejorar la operación.</p>
+                                    </div>
+                                    </div>
 
-                    <div class="plataforma-feature">
-                        <div class="plataforma-feature__icon">
-                            <!-- automatización -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-gear" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
-                                <path
-                                    d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" />
-                            </svg>
-                        </div>
-                        <div class="plataforma-feature__content">
-                            <h4>Automatización</h4>
-                            <p>Flujos de trabajo que reducen tareas manuales y aceleran la atención.</p>
-                        </div>
-                    </div>
-
-                    <div class="plataforma-feature">
-                        <div class="plataforma-feature__icon">
-                            <!-- métricas -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                viewBox="0 0 16 16" aria-hidden="true">
-                                <path
-                                    d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1zm1 12h2V2h-2zm-3 0V7H7v7zm-5 0v-3H2v3z" />
-                            </svg>
-                        </div>
-                        <div class="plataforma-feature__content">
-                            <h4>Métricas y reportes</h4>
-                            <p>KPIs y tableros para entender y mejorar la operación.</p>
-                        </div>
-                    </div>
-
-                    <div class="plataforma-feature">
-                        <div class="plataforma-feature__icon">
-                            <!-- base de conocimiento -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-book" viewBox="0 0 16 16">
-                                <path
-                                    d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
-                            </svg>
-                        </div>
-                        <div class="plataforma-feature__content">
-                            <h4>Base de conocimiento</h4>
-                            <p>Documentación interna para resolver problemas más rápido.</p>
-                        </div>
-                    </div>
-                </div>
+                            <div class="plataforma-feature">
+                                <div class="plataforma-feature__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                                    </svg>
+                                    </div>
+                                    <div class="plataforma-feature__content">
+                                        <h4>Base de conocimiento</h4>
+                                        <p>Documentación interna para resolver problemas más rápido.</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+
 
     <!-- =========================
          SERVICIOS
