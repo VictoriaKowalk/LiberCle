@@ -560,6 +560,15 @@ HERO
   color: rgba(255, 255, 255, 0.72);
 }
 
+.hero__micro {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.96);
+    opacity: 0.9;
+    letter-spacing: 0.2px;
+}
+
 /* BOTONES */
 .btn {
   display: inline-flex;
