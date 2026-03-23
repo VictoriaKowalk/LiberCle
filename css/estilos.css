@@ -1432,7 +1432,8 @@ SECCION PROPUESTA
 ========================= */
 
 .onboarding {
-  margin-top: 72px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   /* MOD */
 }
 
@@ -1444,7 +1445,8 @@ SECCION PROPUESTA
   line-height: 1.65;
   /* MOD */
   color: #1f1f1f;
-  margin-bottom: 28px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* =========================
@@ -1452,10 +1454,12 @@ SECCION PROPUESTA
 ========================= */
 
 .onboarding__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  margin-top: 24px;
+  text-align: center;
 }
 
 .onboarding__col {
@@ -1470,8 +1474,7 @@ SECCION PROPUESTA
 
 @media (max-width: 768px) {
   .onboarding__grid {
-    grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 0;
   }
 
   .onboarding__col:first-child {
