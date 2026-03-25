@@ -55,16 +55,12 @@ h3 {
 
 :root {
   --nav-height: 72px;
-  --anchor-offset: 96px;
+  --anchor-offset: calc(var(--nav-height) + 24px);
   }
   
   html {
     scroll-padding-top: var(--anchor-offset);
   }
-  
-  section[id] {
-    scroll-margin-top: var(--anchor-offset);
-}
 
 /* =========================
   NAV 
